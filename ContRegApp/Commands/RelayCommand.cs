@@ -23,12 +23,12 @@ namespace ContRegApp.Commands
 
         public bool CanExecute(object? parameter)
         {
-            return
+            return _CanExecute(parameter);
         }
 
         public void Execute(object? parameter)
         {
-            throw new NotImplementedException();
+            _Execute(parameter);
         }
     }
 }
